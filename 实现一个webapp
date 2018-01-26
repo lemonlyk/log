@@ -57,3 +57,7 @@ first-app
 开发状态下，只要执行 npm run dev 即可。
 编译整个项目，执行 npm run build，这条指令会在项目的根目录生产 dist 文件夹，这个文件夹里就是编译出来的代码，如果要启动编译后的代码，执行node ./dist/bin/www
 
+#数据库（mongodb）
+先安装mongode
+在项目中添加mongoose
+npm install --save mongoose
