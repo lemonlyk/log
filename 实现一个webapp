@@ -1,0 +1,32 @@
+#webapp功能介绍
+
+#环境要求
+安装nodejs，nvm，mongodb
+
+#构建express框架
+##命令
+npm install -g express-generator@4    #安装全局的express
+mkdir webapp                          #创建程序存放的目录
+cd webapp                             #进入目录
+express --view=ejs                    #创建一个基于express的webapp
+npm install                           #安装package.json中的依赖包
+SER DEBUG=webapp:* & npm start        #运行webapp，在浏览器上输入localhost:3000，可以看到网站运行结果
+
+##构建label编译结构
+在package.json中拷入下面代码
+"devDependencies": {
+  "babel-core": "^6.26.0",
+  "babel-runtime": "^6.26.0",
+  "babel-preset-env": "^1.6.0",
+  "babel-register": "^6.24.1",
+  "dotenv": "^4.0.0",
+  "nodemon": "^1.11.0",
+  "rimraf": "^2.6.1"
+}
+"dependencies": {
+  "babel-cli": "^6.24.1",
+}
+在项目的根目录下添加 .babelrc 文件
+{
+  "presets": ["env"]
+}
