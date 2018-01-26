@@ -30,3 +30,30 @@ SER DEBUG=webapp:* & npm start        #运行webapp，在浏览器上输入local
 {
   "presets": ["env"]
 }
+运行命令
+npm install
+调整文件结构，便于区分编译器和编译后的文件
+文件结构
+first-app
+  - src
+      - bin
+      - models
+      - public
+      - views
+      - app.js
+      - config.js
+      - route.api.js
+      - route.page.js
+  - .babelrc
+  - middlewares
+  - package.json
+  
+  修改 packeage.json 里的 scripts，目的是用 babel 来编译项目，而不是只用 node 来执行项目。
+"scripts": {
+  "dev": "nodemon ./src/bin/www --exec \"node -r dotenv/config -r babel-register\"",
+  "clean": "rimraf dist",
+  "build": "npm run clean && mkdir -p dist && babel src -s -D -d dist"
+}
+开发状态下，只要执行 npm run dev 即可。
+编译整个项目，执行 npm run build，这条指令会在项目的根目录生产 dist 文件夹，这个文件夹里就是编译出来的代码，如果要启动编译后的代码，执行node ./dist/bin/www
+
