@@ -45,7 +45,8 @@
       fetchData() {
         app.postLists = [{ name: "nodejs调试设置" },
         { name: "实现一个webapp" },
-        { name: "js入门(一)" }];
+        { name: "js入门(一)" }],
+        { name: "js入门(二)（三）" };
         app.postLists.forEach((element,index,arr) =>{
           element.url = "https://lemonlyk.github.io/log/" + element.name + ".md",
           element.index = index+1;
