@@ -1,0 +1,30 @@
+## 提问的正确姿势
+先自行解决，然后google，微信群求助（清楚的描述问题，运行环境，前因后果）
+## 程序
+处理数据，得到结果
+## 命名
+通过命名的变量访问数据，通过变量名知道尽可能多的信息，非how而是what（inputData--how，employeeData--what）
+json对象
+> var JSONObject= {
+> "name":"Bill Gates",
+> "street":"Fifth Avenue New York 666",
+> "age":56,
+> "phone":"555 1234567"};
+对象
+> var Object= {
+> name:"Bill Gates",
+> street:"Fifth Avenue New York 666",
+> age:56,
+> phone:"555 1234567"};
+
+## 编程语法如何学
+自学+老师提示重点+问
+
+## 助理解的工具
+画图，画出流程，如：客户端与服务器端数据处理的流程
+不理解的时候看看是否能画图，用图说话
+
+## 查看变量类型的语法
+typeof
+null 类型是对象
+
