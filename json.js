@@ -1,0 +1,1 @@
+(function(window){var word=[{name:"js入门（一）"},{name:"js入门（七）"},{name:"js入门（九）"},{name:"js入门（二）（三）"},{name:"js入门（八）"},{name:"js入门（六）"},{name:"js入门（十一）"},{name:"js入门（十）"},{name:"js入门（四）"},{name:"nodejs调试设置"}];window.word=word;})(this);
