@@ -17,7 +17,7 @@ Bower 安装需要环境 node, npm and git.
 ## 安装运行环境
 ###使用framework7自带的环境
 >npm run dev                        #启动服务，先进入app文件夹再运行
-在浏览器中输入http://localhost:8080/view/
+在浏览器中输入 <http://localhost:8080/view/>
 
 ###使用live-server
 >npm install -g live-server        #安装live-server
@@ -25,4 +25,4 @@ Bower 安装需要环境 node, npm and git.
 在浏览器中输入localhost:8080，就可以访问了
 
 ## 创建测试页
-http://framework7.taobao.org/get-started/#.Wn-falMdjBE
+<http://framework7.taobao.org/get-started/#.Wn-falMdjBE>
